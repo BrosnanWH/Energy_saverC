@@ -29,11 +29,14 @@ namespace calculadora_energia
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+
             Cantidad = (int)numericCantidad.Value;
             Potencia = (double)numericPotencia.Value;
             Horas = (double)numericHoras.Value;
             Minutos = (double)numericMinutos.Value;
             Dias = (int)numericDias.Value;
+
+            
 
             this.DialogResult = DialogResult.OK;
             this.Close();
@@ -45,6 +48,11 @@ namespace calculadora_energia
         }
 
         private void numericDias_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericCantidad_ValueChanged(object sender, EventArgs e)
         {
 
         }

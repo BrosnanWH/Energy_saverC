@@ -106,7 +106,7 @@
             // 
             this.btnAceptar.BackColor = System.Drawing.Color.BurlyWood;
             this.btnAceptar.Location = new System.Drawing.Point(100, 213);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(65, 32);
             this.btnAceptar.TabIndex = 5;
@@ -119,7 +119,7 @@
             this.numericCantidad.BackColor = System.Drawing.Color.BurlyWood;
             this.numericCantidad.ForeColor = System.Drawing.SystemColors.WindowText;
             this.numericCantidad.Location = new System.Drawing.Point(191, 53);
-            this.numericCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericCantidad.Margin = new System.Windows.Forms.Padding(2);
             this.numericCantidad.Maximum = new decimal(new int[] {
             10,
             0,
@@ -128,13 +128,14 @@
             this.numericCantidad.Name = "numericCantidad";
             this.numericCantidad.Size = new System.Drawing.Size(72, 23);
             this.numericCantidad.TabIndex = 6;
+            this.numericCantidad.ValueChanged += new System.EventHandler(this.numericCantidad_ValueChanged);
             // 
             // numericPotencia
             // 
             this.numericPotencia.BackColor = System.Drawing.Color.BurlyWood;
             this.numericPotencia.ForeColor = System.Drawing.SystemColors.WindowText;
             this.numericPotencia.Location = new System.Drawing.Point(191, 89);
-            this.numericPotencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericPotencia.Margin = new System.Windows.Forms.Padding(2);
             this.numericPotencia.Maximum = new decimal(new int[] {
             15000,
             0,
@@ -149,7 +150,7 @@
             this.numericHoras.BackColor = System.Drawing.Color.BurlyWood;
             this.numericHoras.ForeColor = System.Drawing.SystemColors.WindowText;
             this.numericHoras.Location = new System.Drawing.Point(191, 120);
-            this.numericHoras.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericHoras.Margin = new System.Windows.Forms.Padding(2);
             this.numericHoras.Maximum = new decimal(new int[] {
             24,
             0,
@@ -164,7 +165,7 @@
             this.numericMinutos.BackColor = System.Drawing.Color.BurlyWood;
             this.numericMinutos.ForeColor = System.Drawing.SystemColors.WindowText;
             this.numericMinutos.Location = new System.Drawing.Point(191, 151);
-            this.numericMinutos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericMinutos.Margin = new System.Windows.Forms.Padding(2);
             this.numericMinutos.Maximum = new decimal(new int[] {
             60,
             0,
@@ -179,7 +180,7 @@
             this.numericDias.BackColor = System.Drawing.Color.BurlyWood;
             this.numericDias.ForeColor = System.Drawing.SystemColors.WindowText;
             this.numericDias.Location = new System.Drawing.Point(191, 182);
-            this.numericDias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericDias.Margin = new System.Windows.Forms.Padding(2);
             this.numericDias.Maximum = new decimal(new int[] {
             31,
             0,
@@ -210,7 +211,7 @@
             this.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkBlue;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormDatos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Values";
