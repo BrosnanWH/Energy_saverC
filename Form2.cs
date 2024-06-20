@@ -260,7 +260,7 @@ namespace calculadora_energia
         private void btnReiniciar_Click(object sender, EventArgs e)
         {
             electrodomesticos.Clear();
-            lblTotalCosto.Text = string.Empty;
+            lblTotalCosto.Text = string.Format("Total: C$ 0.00");
         }
 
         private void lblTotalCosto_Click(object sender, EventArgs e)
