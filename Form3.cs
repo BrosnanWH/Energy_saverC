@@ -18,11 +18,9 @@ namespace calculadora_energia
         }
         public void VisitLink()
         {
-            // Change the color of the link text by setting LinkVisited
-            // to true.
+            
             linkLabel1.LinkVisited = true;
-            //Call the Process.Start method to open the default browser
-            //with a URL:
+            //Llamar metodo para abrir link en el navegador
             System.Diagnostics.Process.Start("https://github.com/BrosnanWH/Energy_saverC");
         }
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -34,7 +32,7 @@ namespace calculadora_energia
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Unable to open link that was clicked.");
+                    MessageBox.Show("No se pudo abrir este enlace.");
                 }
             }
 
